@@ -1,0 +1,673 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #1f242d;
+    background-size: cover;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    border-radius: 20px;
+}
+.container .holder{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+.container .holder .logo{
+    margin-top: 50px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.container .holder .logo h2{
+    color:#00ff55;
+    border: 1px solid #00ff55;
+    border-radius: 50%;
+}
+.container .holder .logo h2:hover{
+    box-shadow: 3px 3px 3px 3px rgba(31, 247, 3, 0.1); 
+    font-size: larger;   
+}
+.container .holder .nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+}
+.container .holder .nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.container .holder .nav a:hover{
+    color: #00ff55; 
+    transform: scale(1.5);
+    font-size: x-large;
+}
+.container .box{
+    display:flex;
+    width: 90%;
+    justify-content: space-between
+}
+.container .box .words{
+    margin-left: 55px;
+    margin-top: 80px;
+}
+.container .box .photo img{
+    border-radius: 90%;
+    width: 390px;
+    height: 410px;
+    border: 2px solid #00ff55;
+    cursor: pointer;
+}
+.container .box .photo img:hover{
+    background-image: linear-gradient(rgba(15,7,5,0),rgba(12,12,12));
+}
+.container .box .photo{
+    box-shadow: 7px 7px 7px 7px rgb(0, 0,0,0.1);
+    border-radius: 100%;
+    margin-top: 70px;
+}
+.container .box .words h1{
+    color: white;
+    margin-top: 5px;
+    font-size: 50px;
+}
+.container .box .words span{
+    color: #00ff55;
+}
+.container .box .words h2::after{
+    /* margin-top: 5px;
+    font-size: 39px; */
+  content: "Frontend Developer";
+  animation: changeText 3s steps(1) infinite;
+  color: #00ff99;
+  border-right: 2px solid #00ff99;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+@keyframes changeText {
+  0% {
+    content: "Frontend Developer";
+  }
+  33% {
+    content: "UI Designer";
+  }
+  66% {
+    content: "Web Developer";
+  }
+  100% {
+    content: "Frontend Developer";
+  }
+
+}
+.container .box .words h5{
+    margin-top: 7px;
+    color: rgb(161, 160, 160);
+    font-size: 15px;
+}
+.container .box .words h3{
+    font-size: 35px;
+}
+.container .icon{
+    margin-left: 35px;
+    margin-top: -150px;
+    justify-content: center;
+}
+.container .icon i{
+    padding: 15px;
+    font-size: 30px;
+    color: #7cf03d;
+    cursor: pointer;
+    border:#7cf03d;
+}
+.container .icon i:hover{
+    background:transparent ;
+    border-radius: 50%;
+    border: #00ff55;
+    font-size: large;
+}
+.container .button{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.container .button button{
+    padding: 10px;
+    background-color: #00ff55;
+    color: black;
+    transition: 0.5s ease;
+    width: 200px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #7cf03d;
+     box-shadow: 10px 10px 10px 10px rgba(31, 247, 3, 0.1);
+}
+.container .button button:hover{
+    translate: scale(1.4);
+    background: transparent;
+    box-shadow: none;
+    color: #7cf03d;
+    box-shadow: 10px 10px 10px 10px rgba(31, 247, 3, 0.1);
+}
+.service{
+    margin-top: 100px;
+    background-color: #252b36;
+    height: 100%;
+    width: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.service .text p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: cursive;
+    color: white;
+}
+.service .backet{
+    display: flex;
+}
+.service .backet i{
+    padding: 150px;
+    font-size: 50px;
+    color: green;
+    margin-top: -100px;
+}
+.service .backet .cup{
+    border: 2px solid green;
+    margin-left: 70px;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(31, 247, 3, 0.1);
+    margin-bottom: 130px;
+}
+.service .backet .cup h2{
+    text-align: center;
+    margin-top: -130px;
+    color: #f4f4f4;
+}
+.service .backet .cup p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.service .backet .cup button{
+    text-align: center;
+    background-color: #00ff55;
+    width: 100px;
+    padding: 8px;
+    margin-left: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 3px rgba(31, 247, 3, 0.1);
+}
+.service .backet .cup button:hover{
+    background: transparent;
+    border: 2px solid #00ff55;
+    color: #00ff55;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+.hold .expe p{
+    margin-left: 550px;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: cursive;
+    color: white;
+}
+.hold{
+    margin-top: 70px;
+}
+.hold .holds{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.hold .holds .camera{
+    margin-left: 55px;
+}
+.hold .holds .camera img{
+    border-radius: 50%;
+    width: 310px;
+    border: 2px solid #00ff55;
+    background-image: linear-gradient(rgba(15,5,7,0),rgba(12,12,12));
+} 
+.hold .holds #words{
+    border: 2px solid #00ff55;
+    width: 800px;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: block;
+}
+.hold .holds #words ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+.hold .holds #words a{
+    padding: 18px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 20px;
+}
+.hold .holds #words .came img{
+    width: 100px;
+    height: 200px;
+    padding: 50px;
+}
+.hold .holds #words .came img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.hold .holds #words a:hover{
+    color: #00ff55;
+    font-size: large;
+}
+.pro{
+    background-color: #252b36;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+
+}
+.pro .project p{
+    margin-left: 550px;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: cursive;
+    color: white;    
+}
+.pro .projectimg img{
+    margin-left: 500px;
+    border-radius: 50%;
+    border: 4px solid #00ff55;
+    box-shadow: 8px 8px 8px 8px rgba(31, 247, 3, 0.1);
+    margin-top: 10px;
+}
+.pro .projectimg img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.pro .projectbox {
+    display: flex;
+     margin-left: 150px;
+     margin-top: 50px;
+     justify-content: space-between;
+     width: 70%;
+     margin-bottom: 90px;
+}
+.pro .projectbox .boxen:hover{
+    box-shadow: 8px 8px 8px 8px rgba(31, 247, 3, 0.1) ;
+}
+.pro .projectbox .boxen i{
+     font-size:50px ;
+     color: #00ff55;
+}
+.pro .projectbox .boxen{
+    border: 3px solid #00ff99;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 100px;
+}
+.pro .projectbox .boxen p{
+    color: wheat;
+    font-weight: 700;
+}
+.education{
+    margin-bottom: 60px;
+}
+.education .written p{
+     margin-left: 550px;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: cursive;
+    color: white;  
+    margin-top: -40px;  
+}
+.education .grades{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.education .grades .grade{
+    border: 2px solid #00ff55;
+    text-align: center;
+    margin-left: 60px;
+     border-radius: 20px;
+      padding: 10px;
+}
+.education .grades .grade h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+.education .grades .grade p{
+    color: rgb(198, 207, 214);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.education .grades .grade button{
+    padding: 8px;
+    border-radius: 40px;
+    background-color: #00ff99;
+} 
+.education .grades .grade button:hover{
+     background: transparent;
+    border: 2px solid #00ff55;
+    color: #00ff55;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+.education  .university{
+     border: 2px solid #00ff55;
+    text-align: center;
+    margin-left: 380px;
+    border-radius: 20px;
+    padding: 10px;   
+    width: 550px; 
+    margin-top: 25px;
+}
+.education  .university h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue; 
+}
+.education  .university p{
+    color: rgb(198, 207, 214);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.education  .university button{
+    padding: 8px;
+    border-radius: 40px;
+    background-color: #00ff99;
+    }
+.education  .university button:hover{
+     background: transparent;
+    border: 2px solid #00ff55;
+    color: #00ff55;
+    transition: 0.5s ease;
+    transform: scale(1.1);  
+}
+footer{
+        background-color: #252b36;
+        padding: 0rem;
+}
+.footer {
+    margin-left: 500px;
+    width: auto;
+}
+.footer i{
+    padding: 20px;
+    font-size: 30px;
+    color: #00ff37;
+}
+.footer i:hover{
+    font-size: large;
+}
+.textfooter{
+    margin-left: 80px;
+    color: white;
+}
+@media screen and ( max-width:360px){
+    .container .holder .logo h2{
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: -50px;
+    } 
+    .container .holder .nav a{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .container .holder .nav a:hover{
+        font-size: medium;
+    }
+    .container .holder .nav ul{
+       margin-right: -15px;
+       margin-top: 15px;
+    }
+    .container .holder .logo{
+        margin-top: 15px;
+    }
+    .container .box .words h3 {
+       font-size: 15px;
+       margin-left: -40px;
+    }
+    
+    .container .box .photo img {
+       border-radius: 90%;
+       width: 140px;
+       height: 160px;
+       border: 2px solid #00ff55;
+       cursor: pointer;
+    }
+    
+     .container .box .words {
+       margin-left: 55px;
+       margin-top: 250px;
+    }
+    .container .box {
+    display: flex
+    }
+    .container .box {
+    width: 70%;
+    justify-content: space-between;
+    }
+    .container .box .photo {
+    box-shadow: 7px 7px 7px 7px rgb(0, 0, 0, 0.1);
+    border-radius: 100%;
+    margin-top: 70px;
+    margin-left: -250px;
+    }
+    .container .box .words {
+        margin-left: 25px;
+        margin-top: 250px;
+    }
+    .container .box .words h3 {
+        font-size: 23px;
+        margin-left: 3px;
+    }
+    .container .box .words h1 {
+      color: white;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+    .container .box .words h5 {
+    margin-top: 7px;
+    color: rgb(161, 160, 160);
+    font-size: 10px;
+    }
+    .container .icon {
+    margin-left: 70px;
+    margin-top: 2px;
+    }
+    .container .icon i {
+    padding: 15px;
+    font-size: 20px;
+    color: #7cf03d;
+    cursor: pointer;
+    border: #7cf03d;
+    }
+    .container .button {
+    margin-left: 75px;
+    margin-top: 30px;
+    }
+    .service .text p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: cursive;
+    color: white;
+    }
+    .service {
+    margin-top: 10px;
+    }
+    .service .backet .cup {
+    text-align: center;
+    height: 130px;
+    width: 200px;
+    border: 2px solid green;
+    margin-left: 34px;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(31, 247, 3, 0.1);
+    }
+    .service .backet {
+    display: block;
+    }
+    .service .backet i {
+    padding: 45px;
+    font-size: 15px;
+    color: green;
+    margin-top: -30px;
+    }
+    .service .backet .cup h2 {
+    margin-top: -40px;
+    color: #f4f4f4;
+    font-size: 10px;
+    }
+    .service .backet .cup p {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 7px;
+    }
+    .service .backet .cup button {
+    background-color: #00ff55;
+    width: 80px;    margin-left: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 3px rgba(31, 247, 3, 0.1);
+    padding: 1px;
+    margin-top: -122px;
+    } 
+    .hold {
+    margin-top: 10px;
+    }  
+    .hold .expe p {
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: cursive;
+    color: white;
+    }
+    .hold .holds {
+    display: block;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 45px;
+    margin-bottom: 50px;
+     }
+     .hold .holds .camera img {
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 190px;
+    border: 2px solid #00ff55;
+    background-image: linear-gradient(rgba(15, 5, 7, 0), rgba(12, 12, 12));
+    }
+    .hold .holds #words {
+    border: 2px solid #00ff55;
+    width: 340px;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: block;
+    }
+    .hold .holds #words a {
+    padding: 18px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 9px;
+    }
+    .hold .holds #words .came img {
+    width: 19px;
+    height: 40px;
+    padding: 30px;
+    margin-left: 20px;
+    }
+    .pro .project p {
+    margin-left: 130px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    }
+    .pro .projectimg img {
+    margin-left: 500px;
+    border-radius: 50%;
+    border: 4px solid #00ff55;
+    box-shadow: 8px 8px 8px 8px rgba(31, 247, 3, 0.1);
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    }
+    .pro .projectbox {
+    display: flex
+     }
+    .pro .projectbox {
+    margin-left: 150px;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 90px;
+     }
+     .pro .projectbox .boxen {
+    margin-left: -140px;
+    border: 3px solid #00ff99;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 100px;
+    }
+    .education .written p {
+    margin-left: 130px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    margin-top: 30px;
+    }
+    .education .grades {
+    display: block;
+    margin-top: 40px;
+    margin-bottom:30px
+    }
+    .education .grades .grade {
+    margin-top: 20px;
+    border: 2px solid #00ff55;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    }
+    .education .university {
+    border: 2px solid #00ff55;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    margin-top: 25px;
+}
+.footer {
+    width: auto;
+    margin-left: 27px;
+}
+
+
+}
+
